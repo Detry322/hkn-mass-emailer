@@ -60,7 +60,8 @@
               })
             ).append(
               $("<a />", {
-                "href": createMailto(data['subject'], data['body'], sender, person)
+                "href": createMailto(data['subject'], data['body'], sender, person),
+                html: person['company'] + " - " + person['first'] + " " + person['last']
               })
             ).appendTo("#people_container");
           });
