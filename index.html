@@ -36,7 +36,9 @@
         return "mailto:" + encodeURIComponent(person['email']) + "?cc=hkn-officers-16-17@mit.edu&subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
       }
 
-      $.getJSON("/data/hkn-emails.json", function( data ) {
+
+
+      $.getJSON("/data/hkn-emails.json", {}, function( data ) {
 
         console.log(data);
 
