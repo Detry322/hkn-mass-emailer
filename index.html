@@ -66,8 +66,9 @@
           });
 
         });
-      }).error(function(e) {
+      }).error(function(e, textStatus) {
         console.log(e);
+        console.log(textStatus);
       });
     });
 
