@@ -22,11 +22,11 @@
     $(document).ready(function() {
 
       function replace(body, sender, person) {
-        body = body.replace(/$THEM_FIRST/g, person['first']);
-        body = body.replace(/$THEM_LAST/g, person['last']);
-        body = body.replace(/$COMPANY/g, person['company']);
-        body = body.replace(/$ME_FIRST/g, sender['first']);
-        body = body.replace(/$ME_LAST/g, sender['last']);
+        body = body.replace(/\$THEM_FIRST/g, person['first']);
+        body = body.replace(/\$THEM_LAST/g, person['last']);
+        body = body.replace(/\$COMPANY/g, person['company']);
+        body = body.replace(/\$ME_FIRST/g, sender['first']);
+        body = body.replace(/\$ME_LAST/g, sender['last']);
         return body;
       };
 
