@@ -61,6 +61,7 @@
             ).append(
               $("<a />", {
                 "href": createMailto(data['subject'], data['body'], sender, person),
+                "target": "_blank",
                 html: person['company'] + " - " + person['first'] + " " + person['last']
               })
             ).appendTo("#people_container");
